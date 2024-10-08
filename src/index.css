@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-direction: cloumn;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30 0%, #243855 100%);
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding: 30px;
+  font-size: 5rem;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  color: hsl(0, 0%, 95%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+}
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 10px;
+  min-width: 125px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  color: hsl(0, 12%, 90%);
+  box-shadow: 6px 6px 16px #bebebe, -6px -6px 16px #ffffff;
+  transition: background-color 0.5s ease, transform 0.2s ease;
+}
+.start-button {
+  background-color: hsl(145, 63%, 49%);
+}
+.start-button:hover {
+  background-color: hsl(145, 63%, 39%);
+  transform: translateY(-3px);
+}
+.start-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.stop-button {
+  background-color: hsl(10, 63%, 49%);
+}
+.stop-button:hover {
+  background-color: hsl(10, 63%, 39%);
+  transform: translateY(-3px);
+}
+.stop-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.reset-button {
+  background-color: hsl(205, 63%, 50%);
+}
+.reset-button:hover {
+  background-color: hsl(205, 63%, 40%);
+  transform: translateY(-3px);
+}
+.reset-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.display {
+  font-size: 6rem;
+  color: hsl(0, 0, 95);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.stopwatch:hover .display {
+  transform: scale(1.05);
+  text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.75);
+}
